@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagenes/FondoRegistro.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flecha1{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.flecha1 img {
+  width: 200px;
+}
+
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.titulo-perrito {
+  position: relative;
+  width: 750px;
+  z-index: 3;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.titulo-perrito img {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  margin-bottom: -65px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn {
+  width: 600px;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  animation: scaleUp 1.2s ease-out;
+  transition: 0.40s ease;
+  position: relative;
+  z-index: 1;  /* Botones quedan debajo del perrito */
+}
+
+.btn-vet {
+  background-color: #BAE8D9;
+  color: #4e4e4e;
+}
+
+.btn-vet:hover{
+  background-color: #8DC2B1;
+}
+
+.btn-tutor {
+  background-color: #E0CB94;
+  color: #4e4e4e;
+}
+
+.btn-tutor:hover{
+  background-color:#D6B665;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes scaleUp {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+

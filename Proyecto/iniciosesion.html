@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="iniciosesion.css">
+    </head>
+    <body>
+    <a href="index.html" class="flecha1">
+        <img src="imagenes/flechaInicio.png">
+    </a>
+    <div class="contenedor">
+        <div class="izquierda">
+        </div>
+        <div class="derecha">
+            <form action="iniciosesion.jsp" method="post">
+                <h1 class="IS">Inicio de Sesión<br>Tutor de Mascotas</h1>
+                <input type="email" placeholder="Ingresar correo" class="campo" name="correo" required>
+                <input type="password" placeholder="Ingresar contraseña" class="campo" name="contrasena" required>
+                <input type="hidden" name="tipoUsuario" value="tutor"> <br>
+                <a href="cambiarcontraseña.html" class="link">¿Olvidaste tu contraseña? Da click aquí</a> <br>
+                <button type="submit" class="btn btn-principal">Iniciar sesión</button>
+            </form>
+            <div class="botones-secundarios">
+                <a href="iniciosesionvete.html"><button class="btn btn-secundario1">Soy Veterinario</button></a>
+                <button class="btn btn-secundario">Soy Tutor de mascota</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</html> 

@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagenes/fondoIS.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.izquierda {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.derecha {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.IS {
+  font-family: The Seasons;
+  font-size: 70px;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInLeft 1.2s ease-out;
+}
+
+.campo {
+  width: 80%;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: #aaaaaa;
+  color: #5e5e5e;
+}
+
+input::placeholder {
+    font-size: 25px;
+  }
+
+.link {
+  font-size: 20px;
+  color: #007BFF;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.btn-principal {
+  background-color: #4a6378;
+  color: white;
+  padding: 19px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-principal:hover{
+  background-color: #44556F;
+}
+
+.botones-secundarios {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secundario {
+  background-color: #4a6378;
+  color: white;
+  padding: 20px 35px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-secundario1 {
+  background-color: #D3C082;
+  color: white;
+  padding: 20px 35px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-secundario1:hover{
+  background-color: #2e4b5e;
+}
+
+.flecha1{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.flecha1 img {
+  width: 200px;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*   PANTALLAS GRANDES   */
+@media (min-width: 1400px) {
+  .IS {
+    font-size: 80px;
+  }
+
+  .campo {
+    width: 70%;
+    font-size: 20px;
+    padding: 22px;
+  }
+
+  .flecha img {
+    width: 90px;
+  }
+}
+
+
+/*   LAPTOPS ESTÁNDAR   */
+@media (max-width: 1200px) {
+  .contenedor {
+    width: 95%;
+  }
+
+  .IS {
+    font-size: 60px;
+  }
+
+  .campo {
+    width: 85%;
+  }
+}
+
+
+/*   TABLETS HORIZONTALES */
+@media (max-width: 900px) {
+  .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .izquierda {
+    display: none;
+  }
+
+  .IS {
+    font-size: 45px;
+    margin-top: 50px;
+  }
+
+  .campo {
+    width: 90%;
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .flecha img {
+    width: 65px;
+  }
+}

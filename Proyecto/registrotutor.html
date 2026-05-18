@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Tutor</title>
+    <link rel="stylesheet" href="registrotutor.css">
+</head>
+<body>
+<a href="registro.html" class="flecha1">
+    <img src="imagenes/FelchaRegistro.png" alt="regresar">
+</a>
+<form action="registrotutor.jsp" method="POST">
+    <section class="contenedor">
+
+        <div class="titulo-perrito">
+            <img src="imagenes/TurotRegistro.png" alt="Registro">
+        </div>
+
+        <div class="izquierda">
+            <input type="text" placeholder="Nombre del Tutor de la Mascota" id="nombre" name="nombre" class="campo" required>
+            <input type="email" placeholder="Correo: Ejemplo@gmail.com" id="email" name="email" class="campo" required>
+            <input type="password" placeholder="Crea una contraseña" id="contra" name="contra" class="campo" required>
+            <input type="text" placeholder="Telefono" id="telf" name="telf" class="campo" required>
+        </div>
+
+        <button class="btn btn-principal" type="submit">Registrarme</button>
+
+    </section>
+</form>
+
+<aside>
+    <div class="abajo">
+        <div class="gatito-imagen">
+            <img src="imagenes/gatito.png" >
+        </div>
+    </div>
+</aside>
+</body>
+</html>

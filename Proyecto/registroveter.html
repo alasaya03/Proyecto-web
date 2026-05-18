@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro Veterinario</title>
+  <link rel="stylesheet" href="registrovete.css">
+</head>
+<body>
+<a href="registro.html" class="flecha1">
+  <img src="imagenes/FelchaRegistro.png" alt="regresar">
+</a>
+
+<form action="registrovete.jsp" method="POST"> 
+  <section class="contenedor">
+
+    <div class="titulo-perrito">
+      <img src="imagenes/VeterinarioRegistro.png" alt="Registro">
+    </div>
+
+    <div class="izquierda">
+      <input type="text" placeholder="Nombre" class="campo" id="nombre" name="nombre" required>
+      <input type="email" placeholder="Correo: Ejemplo@gmail.com" class="campo" id="email" name="email" required>
+      <input type="password" placeholder="Crea una contraseña" class="campo" id="contra" name="contra" required>
+      <input type="text" placeholder="Telefono" class="campo" id="telf" name="telf" required>
+    </div>
+    <select class="campo2" id="espec" name="espec" required>
+      <option value="" disabled selected>Especialidad</option>
+      <option id="1e" value="medicina_interna">Medicina interna</option>
+      <option id="2e" value="cirugia">Cirugía</option>
+      <option id="3e" value="cardiologia">Cardiología</option>
+      <option id="4e" value="dermatologia">Dermatología</option>
+      <option id="5e" value="anestesiologia">Anestesiología</option>
+      <option id="6e" value="imagenologia">Imagenología</option>
+      <option id="7e" value="cuidados_intensivos">Cuidados intensivos y de emergencia</option>
+      <option id="8e" value="fisioterapia">Fisioterapia y rehabilitación</option>
+      <option id="9e" value="bienestar_animal">Bienestar animal</option>
+    </select>
+  </section>
+
+  <aside>
+    <div class="abajo">
+      <div class="gatito-imagen">
+        <img src="imagenes/gatito.png" >
+      </div>
+      <button class="btn btn-principal" type="submit">Registrarme</button>
+    </div>
+  </aside>
+</form>
+</body>
+</html>

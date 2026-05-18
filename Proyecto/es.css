@@ -1,0 +1,153 @@
+/* === GENERAL === */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.titulo {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* === CALENDARIO === */
+.calendar {
+    width: 60%;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.month button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.month button:hover {
+    background: #0056d2;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px 0;
+    color: #666;
+    font-weight: bold;
+}
+
+td {
+    padding: 8px;
+}
+
+/* DÍAS */
+.day {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.day:hover {
+    background: #e9ecef;
+}
+
+/* Día seleccionado */
+.selected {
+    background: #28a745 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* === HORAS === */
+.time-selection {
+    margin-top: 25px;
+}
+
+.time-btn {
+    background: #28a745;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.time-btn:hover {
+    background: #1e7e34;
+}
+
+/* Hora seleccionada */
+.time-selected {
+    background: #ffc107 !important;
+    color: black !important;
+}
+
+/* === RESUMEN === */
+.summary {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* === BOTÓN === */
+#confirm-btn {
+    margin-top: 20px;
+    background: #f4b400;
+    color: black;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#confirm-btn:hover {
+    background: #d79900;
+}
+#time-buttons button.ocupado {
+    background: #ccc !important;
+    color: #666 !important;
+    border-color: #aaa !important;
+    cursor: not-allowed;
+}
+
+#time-buttons button.selected-hour {
+    background: #007bff !important;
+    color: white !important;
+    border-color: #0056b3 !important;
+}

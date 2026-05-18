@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagenes/petifyFondo.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 500px;
+  height: 500px;
+  background: url('imagenes/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+  animation: scaleUp 1.2s ease-out;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 40px 80px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  margin-left: 500px;
+}
+
+.welcome-text {
+  text-align: center;
+  animation: fadeInLeft 1.2s ease-out;
+  font-family: Lobster;
+  font-size: 50px;
+  color: black;
+  margin: 0;
+  font-weight: 500;
+  text-shadow: 2px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  width: 400px;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.btn-login {
+  background-color: #4a6378;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #2e4b5e;
+}
+
+
+.btn-signup {
+  background-color: #ffffff;
+  color: #4a6378;
+  border: 2px solid #4a6378;
+}
+
+.btn-signup:hover {
+  background-color: #e8f0f9;
+}
+
+@keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+@keyframes scaleUp {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+
